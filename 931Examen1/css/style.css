@@ -1,0 +1,107 @@
+.indexbody {
+    background-color: #F0FFF0;
+    text-align: center;
+
+}
+
+.indextitre {
+    color: red;
+    font-size: 40px;
+
+}
+
+.indexliens {
+    font-size: 30px;
+
+}
+
+.q2body {
+    background-color: #FF8080;
+    font-size: 12pt;
+    font-family: 'Tahoma';
+
+}
+
+.q2titre {
+    color: yellow;
+    text-align: center;
+}
+
+.q2hr {
+    border: none;
+    height: 6px;
+    background-color: black;
+    width: 50%;
+    
+}
+
+.q2titrecontenu {
+    color: white;
+    font-size: 16pt;
+}
+
+.q2listepuce {
+    list-style-type: none;
+}
+
+.q2para {
+    color: darkblue;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13pt;
+}
+
+.q2subtext {
+    font-variant-position: sub;
+}
+
+.q2striketext {
+    text-decoration: line-through
+}
+
+.q2flocon {
+    display:block;
+    margin: auto;
+}
+
+.q3body {
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+
+}
+
+table , td, th {
+	border: 5px solid #888888;
+	border-collapse: collapse;
+    padding: 10px;
+}
+
+.q3table {
+    margin: auto;
+    width: 75%;
+    background-color: yellow;
+    border: 5px solid #344af5;
+}
+
+.q3tdvert {
+    background-color: green;
+    color: white;
+    font-size: 16pt;
+
+}
+
+.q3tdgauche {
+    text-align: left;
+    width: 40%;
+}
+
+.q3trmontants {
+    text-align: right;
+}
+
+.q3tdita {
+    font-style: italic;
+    text-align: left;
+    
+}

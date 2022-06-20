@@ -32,7 +32,6 @@ a, a:link, a:visited, a:active {
     color: #FFFFFF;
     text-decoration: none;
 }
-
 a:hover {
     color: #d633ff;
 }
@@ -51,35 +50,49 @@ a:hover:before, div#a:focus:before { visibility: visible; transform: scaleX(1); 
     padding-left: 3vw;
     padding-right: 3vw;
 }
+
 .section0RE {
     max-width: 1000px;
     margin: 0 auto;
     border-top: #FFFFFF solid;
 }
+
 .section0RG {
     font-weight: bold;
     float: left;
     margin: 0 auto;
 }
+
 .section0RD, .liens {
     float: right;
     margin: 0 auto;
     margin-left: 1rem;
 }
+
+.playpause {
+    float: left;
+    margin: 0 auto;
+    margin-left: 1rem;
+}
+
 .section1, .section3, .section5 {
     margin: 0 auto;
     max-width: 1000px;
     padding-top: 15px;
     text-align: center;
     font-family: inherit;
-
 }
+
 .section2 {
     margin: 0 auto;
     max-width: 400px;
     padding-top: 15px;
     text-align: center;
+    animation: defilant 5s linear infinite;
+    overflow: hidden;
+    position: relative;
 }
+
 .section4 {
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
@@ -87,9 +100,30 @@ a:hover:before, div#a:focus:before { visibility: visible; transform: scaleX(1); 
     padding-top: 15px;
     text-align: center;
 }
+
 img {
     border: #FFFFFF solid;
 }
+
 p {
     white-space: pre-line;
 }
+
+@keyframes defilant {
+    50% { transform: translateX(50%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css */
+.rainbow { animation: colorRotate 1s linear 0s infinite; }
+@keyframes colorRotate {
+    from { color: #000000; }
+    50% { color: #FF3399; }
+    100% { color: #000000; }
+}
+
+/* https://codepen.io/websitebeaver/pen/vKdWxW */
+#play-pause-button{
+    font-size: 50px;
+    cursor: pointer;
+  }
