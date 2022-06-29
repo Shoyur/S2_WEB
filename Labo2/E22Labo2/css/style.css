@@ -69,12 +69,6 @@ a:hover:before, div#a:focus:before { visibility: visible; transform: scaleX(1); 
     margin-left: 1rem;
 }
 
-.playpause {
-    float: left;
-    margin: 0 auto;
-    margin-left: 1rem;
-}
-
 .section1, .section3, .section5 {
     margin: 0 auto;
     max-width: 1000px;
@@ -101,7 +95,7 @@ a:hover:before, div#a:focus:before { visibility: visible; transform: scaleX(1); 
     text-align: center;
 }
 
-img {
+img, iframe, audio {
     border: #FFFFFF solid;
 }
 
@@ -121,9 +115,3 @@ p {
     50% { color: #FF3399; }
     100% { color: #000000; }
 }
-
-/* https://codepen.io/websitebeaver/pen/vKdWxW */
-#play-pause-button{
-    font-size: 50px;
-    cursor: pointer;
-  }
