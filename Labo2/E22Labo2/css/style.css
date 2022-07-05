@@ -115,3 +115,24 @@ p {
     50% { color: #FF3399; }
     100% { color: #000000; }
 }
+
+table, td, th {
+    border: 2px solid #FFFFFF;
+    margin: 0 auto;
+    border-spacing: 0px;
+}
+td, th {
+	padding: 10px;
+    padding-bottom: 0px;
+}
+td img {
+    max-width: 300px;
+}
+
+.titre_tab_loisirs {
+    background-color: #999999;
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px;
+}
