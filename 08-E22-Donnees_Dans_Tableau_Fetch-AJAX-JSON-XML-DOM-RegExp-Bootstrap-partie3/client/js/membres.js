@@ -26,7 +26,6 @@
 
 
 let membres = [
-    // Syntaxe JSON :
     {"id":1,"prenom":"Marie","nom":"Curie","sexe":"F","daten":"1925-04-23"},
     {"id":2,"prenom":"James","nom":"Bond","sexe":"M","daten":"1967-02-16"}
 ];
@@ -57,15 +56,12 @@ let enregistrerMembre = () => {
     autoIncrement++;
     membres.push(unMembre);
     connexion.push(uneConnexion);
-
-    document.getElementById('formEnreg').innerHTML="Membre créé avec succès.";
+    document.getElementById('formEnregErr').innerHTML="Membre bien enregistré.";
     setTimeout(() => {
-         document.getElementById('formEnreg').innerHTML="";
-         document.getElementById('formEnreg').reset();
-         $('#modalEnreg').modal('hide');
+        document.getElementById('formEnregErr').innerHTML="";
+        document.getElementById('formEnreg').reset();
+        $('#modalEnreg').modal('hide');
     }, 5000);
-
-
 }
 
 //Dans le cas d'un buton type=submit
@@ -75,9 +71,8 @@ let validerFormEnregSubmit = () => {
     if(pass !== cpass){
         alert("Les mots de passe ne sont pas égaux.");
         return false;
-    }
-
-    return true;
+    } 
+    return true; 
 }
 
 //Dans le cas d'un buton type=button
