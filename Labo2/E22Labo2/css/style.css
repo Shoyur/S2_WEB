@@ -97,6 +97,7 @@ a:hover {
 
 img, iframe, audio {
     border: #FFFFFF solid;
+    
 }
 
 p {
@@ -135,4 +136,38 @@ td img {
     font-size: large;
     font-weight: bolder;
     padding: 10px;
+}
+
+select {
+    width: 250px !important;
+    margin: 0 auto;
+    background-color: #252545 !important;
+    color: #FFFFFF !important;
+}
+
+.a1 {
+    color: #FF3399;
+    text-align: center;
+    background-image: none !important;
+}
+
+.a2 {
+    color: #e0751e;
+    text-align: center;
+    background-image: none !important;
+}
+
+.a2 {
+    color: #e0751e;
+    text-align: center;
+    background-image: none !important;
+}
+
+iframe {
+    width: 100%;
+    overflow: hidden !important;
+}
+.a3_img {
+    max-height:100%; 
+    max-width:100%;
 }

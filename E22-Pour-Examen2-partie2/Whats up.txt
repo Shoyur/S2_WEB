@@ -1,0 +1,4 @@
+Un tableau d'objets pour les animaux :
+let nom = [{ }, { }, ...]
+
+<body onLoad="chargement();">

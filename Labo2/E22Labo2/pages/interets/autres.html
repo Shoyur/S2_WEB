@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>--- Autres intérêts ---</title>
+    <link rel="stylesheet" href="..\..\client\utilitaires\bootstrap-5.2.0-beta1-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/scripts.js"></script>
+    <script src="..\..\client\utilitaires\jquery-3.6.0.min.js"></script>
+    <script src="..\..\client\utilitaires\bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js"></script>
 </head>
-<body>
+<body onload="changerInteret();">
     
     <div class="page"> <!-- toute la page dans body -->
         <div class="section0">
             <div class="section0RE"> <!-- rectangle avec espaces -->
                 <div id="div0RG" class="section0RG"> <!-- rectangle gauche -->
-                    Musique
+                    Autres
                 </div>
                 <div class="section0RD"> <!-- rectangle droit -->
                     <div class="lienshover"> <!-- rectangle pour 2 -->
@@ -26,9 +29,14 @@
         <div class="section1">
             <h2>Naviguez parmis mes autres intérêts :</h2>
             <br>
-            <select></select>
+            <select id="selAutres" onChange="changerInteret();"  class="form-select" aria-label="Default select example">
+                <option value="1">Blague du dimanche</option>
+                <option value="2">Mini-Jeu</option>
+                <option value="3">Drôle d'image</option>
+                <option value="4">Vidéoclip préféré</option>
+            </select>
             <br>
-            <iframe id="iframe_autres"></iframe>
+            <iframe scrolling="no" id="iframe_autres"></iframe>
             <br><br><br><br><br><br>
         </div>
     </div>
